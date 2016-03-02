@@ -11,7 +11,7 @@ import UIKit
 let screenWidth = UIScreen.mainScreen().bounds.size.width
 
 class ViewController: UIViewController {
-    var secondView:UIView?
+
     var circleLayer:CAShapeLayer!
     var timer:NSTimer?
     var progress:Double = 0
