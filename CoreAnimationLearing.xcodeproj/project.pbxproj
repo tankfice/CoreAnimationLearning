@@ -14,6 +14,7 @@
 		458A70EE1C86804700540F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458A70EC1C86804700540F1D /* LaunchScreen.storyboard */; };
 		458A70F91C86804700540F1D /* CoreAnimationLearingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A70F81C86804700540F1D /* CoreAnimationLearingTests.swift */; };
 		458A71041C86804700540F1D /* CoreAnimationLearingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A71031C86804700540F1D /* CoreAnimationLearingUITests.swift */; };
+		459B05D91C87CDB400ED6974 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B05D81C87CDB400ED6974 /* CircleLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		458A70FF1C86804700540F1D /* CoreAnimationLearingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationLearingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		458A71031C86804700540F1D /* CoreAnimationLearingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationLearingUITests.swift; sourceTree = "<group>"; };
 		458A71051C86804700540F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459B05D41C87CB0D00ED6974 /* CoreAnimationLearing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreAnimationLearing-Bridging-Header.h"; sourceTree = "<group>"; };
+		459B05D81C87CDB400ED6974 /* CircleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				458A70EA1C86804700540F1D /* Assets.xcassets */,
 				458A70EC1C86804700540F1D /* LaunchScreen.storyboard */,
 				458A70EF1C86804700540F1D /* Info.plist */,
+				459B05D41C87CB0D00ED6974 /* CoreAnimationLearing-Bridging-Header.h */,
+				459B05D81C87CDB400ED6974 /* CircleLoadingView.swift */,
 			);
 			path = CoreAnimationLearing;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				458A70E61C86804700540F1D /* ViewController.swift in Sources */,
+				459B05D91C87CDB400ED6974 /* CircleLoadingView.swift in Sources */,
 				458A70E41C86804700540F1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreAnimationLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tanquwell.CoreAnimationLearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationLearing/CoreAnimationLearing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreAnimationLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tanquwell.CoreAnimationLearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationLearing/CoreAnimationLearing-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +495,7 @@
 				458A710A1C86804700540F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		458A710B1C86804700540F1D /* Build configuration list for PBXNativeTarget "CoreAnimationLearingTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				458A710D1C86804700540F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		458A710E1C86804700540F1D /* Build configuration list for PBXNativeTarget "CoreAnimationLearingUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				458A71101C86804700540F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
