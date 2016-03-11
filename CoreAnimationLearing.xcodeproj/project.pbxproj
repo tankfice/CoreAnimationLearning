@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455122641C9164B100C29915 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455122631C9164B100C29915 /* PushButtonView.swift */; };
+		455122661C916A5E00C29915 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455122651C916A5E00C29915 /* CounterView.swift */; };
+		455122681C9179B100C29915 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455122671C9179B100C29915 /* GraphView.swift */; };
+		4551226A1C926A6500C29915 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455122691C926A6500C29915 /* CoreGraphics.framework */; };
 		458A70E41C86804700540F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A70E31C86804700540F1D /* AppDelegate.swift */; };
 		458A70E61C86804700540F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A70E51C86804700540F1D /* ViewController.swift */; };
 		458A70E91C86804700540F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458A70E71C86804700540F1D /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455122631C9164B100C29915 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		455122651C916A5E00C29915 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		455122671C9179B100C29915 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		455122691C926A6500C29915 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		458A70E01C86804700540F1D /* CoreAnimationLearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationLearing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		458A70E31C86804700540F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		458A70E51C86804700540F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4551226A1C926A6500C29915 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,7 @@
 		458A70D71C86804700540F1D = {
 			isa = PBXGroup;
 			children = (
+				455122691C926A6500C29915 /* CoreGraphics.framework */,
 				458A70E21C86804700540F1D /* CoreAnimationLearing */,
 				458A70F71C86804700540F1D /* CoreAnimationLearingTests */,
 				458A71021C86804700540F1D /* CoreAnimationLearingUITests */,
@@ -108,6 +118,9 @@
 				458A70EF1C86804700540F1D /* Info.plist */,
 				459B05D41C87CB0D00ED6974 /* CoreAnimationLearing-Bridging-Header.h */,
 				459B05D81C87CDB400ED6974 /* CircleLoadingView.swift */,
+				455122631C9164B100C29915 /* PushButtonView.swift */,
+				455122651C916A5E00C29915 /* CounterView.swift */,
+				455122671C9179B100C29915 /* GraphView.swift */,
 			);
 			path = CoreAnimationLearing;
 			sourceTree = "<group>";
@@ -198,6 +211,7 @@
 				TargetAttributes = {
 					458A70DF1C86804700540F1D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = SJMQ4KT95X;
 					};
 					458A70F31C86804700540F1D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -263,7 +277,10 @@
 			files = (
 				458A70E61C86804700540F1D /* ViewController.swift in Sources */,
 				459B05D91C87CDB400ED6974 /* CircleLoadingView.swift in Sources */,
+				455122641C9164B100C29915 /* PushButtonView.swift in Sources */,
 				458A70E41C86804700540F1D /* AppDelegate.swift in Sources */,
+				455122661C916A5E00C29915 /* CounterView.swift in Sources */,
+				455122681C9179B100C29915 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +423,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoreAnimationLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tanquwell.CoreAnimationLearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationLearing/CoreAnimationLearing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -420,10 +440,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoreAnimationLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tanquwell.CoreAnimationLearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationLearing/CoreAnimationLearing-Bridging-Header.h";
 			};
 			name = Release;
